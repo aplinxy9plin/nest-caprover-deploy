@@ -27,8 +27,8 @@ jobs:
       - name: copy file
         uses: canastro/copy-file-action@master
         with:
-          source: "node_modules"
-          target: "dist/node_modules"
+          source: "./node_modules"
+          target: "./dist/node_modules"
 
       - uses: a7ul/tar-action@v1.1.0
         with:
