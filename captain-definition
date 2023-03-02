@@ -1,0 +1,10 @@
+{
+"schemaVersion": 2,
+"dockerfileLines": [
+"FROM node:18-alpine3.16",
+"COPY ./dist /app",
+"RUN chmod -R 777 /app",
+"RUN echo $(ls ./app)",
+"CMD [\"node\", \"app/index.js\"]"
+]
+}
