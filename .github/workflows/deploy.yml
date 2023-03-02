@@ -24,11 +24,8 @@ jobs:
           cache: "npm"
       - run: npm i
       - run: npm run build
-      - name: copy file
-        uses: canastro/copy-file-action@master
-        with:
-          source: "./node_modules"
-          target: "./dist/node_modules"
+      - run: ls
+      - run: mv node_modules dist/node_modules 
 
       - uses: a7ul/tar-action@v1.1.0
         with:
