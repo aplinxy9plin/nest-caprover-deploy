@@ -5,6 +5,6 @@
 "COPY ./dist /app",
 "RUN chmod -R 777 /app",
 "RUN echo $(ls ./app)",
-"CMD [\"node\", \"app/index.js\"]"
+"CMD [\"node\", \"app/main.js\"]"
 ]
 }
